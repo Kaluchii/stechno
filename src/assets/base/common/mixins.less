@@ -1,0 +1,26 @@
+.link(@color, @hover, @border_h){
+  color: @color;
+
+  &:hover, &:focus{
+    cursor: pointer;
+    background: linear-gradient(to right, @border_h, @border_h 100%) repeat-x ~'0 100% / 10px 1px';
+    color: @hover;
+  }
+}
+
+.link-underline(@color, @border, @hover, @border_h){
+  background: linear-gradient(to left, @border, @border 100%) repeat-x ~'0 95% / 10px 1px';
+  color: @color;
+
+  &:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, @border_h, @border_h 100%) repeat-x ~'0 95% / 10px 1px';
+    color: @hover;
+  }
+
+  &:focus{
+    outline: none;
+    background: linear-gradient(to left, @border_h, @border_h 100%) repeat-x ~'0 95% / 10px 1px';
+    color: @hover;
+  }
+}

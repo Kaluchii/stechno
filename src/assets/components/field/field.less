@@ -1,0 +1,60 @@
+.field{
+  &__container{
+    position: relative;
+    display: block;
+
+    &.has-error:not(.is-filling) .field{
+      &__input{
+        border-color: #ff0000;
+        animation: field-shake 0.8s;
+
+        &:hover, &:focus{
+          box-shadow: 0 0 0 1px #ff0000;
+        }
+      }
+    }
+  }
+
+  &__input{
+    display: block;
+    height: @input-height;
+    width: 100%;
+    padding: 6px 20px;
+    line-height: 1.5;
+    border: 1px solid #E5E5E5;
+    background-color: #ffffff;
+    color: @c-main;
+    outline: none;
+    transition: .1s;
+
+    &--textarea{
+      height: 130px;
+      resize: none;
+    }
+
+    &::placeholder{
+      color: @c-minor;
+    }
+
+    &:hover, &:focus{
+      border-color: #E5E5E5;
+    }
+
+    &:focus{
+      box-shadow: 0 0 0 1px #E5E5E5;
+    }
+
+    &[readonly]{
+      background-color: #e8e8e8;
+    }
+  }
+}
+
+@keyframes field-shake {
+  10%, 30%, 50%, 70%, 90% {
+    text-indent: 0.25em
+  }
+  20%, 40%, 60%, 80% {
+    text-indent: 0.55em
+  }
+}

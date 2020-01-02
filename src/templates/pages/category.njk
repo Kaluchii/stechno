@@ -1,0 +1,226 @@
+{% set title = "Категория" %}
+{% set page = "categorypage" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    {% include "blocks/breadcrumbs.njk" %}
+
+    <main class="page__content content">
+        <div class="content__category category">
+            <button class="category__filter-toggle-btn js_filter_toggle" type="button"></button>
+            <h1 class="category__title title-l1">Одежда</h1>
+            <div class="category__block">
+                <div class="category__block-top">
+                    <div class="category__total">Всего 38 товаров</div>
+                    <div class="category__sort">
+                        <span class="category__sort-text">Сортировать по</span>
+                        <div class="category__sort-select select select--without-borders js_select" aria-label="Сортировка">
+                            <input type="hidden" class="js_select_input" name="sort" value="ask" autocomplete="off">
+                            <div class="select__header js_select_btn">
+                                <div class="select__current js_current_value">возрастанию цены</div>
+                                <div class="select__arrow"></div>
+                            </div>
+                            <ul class="select__list" role="listbox" aria-expanded="false">
+                                <li class="select__list-item js_select_option" role="option" data-value="desk" data-text="убыванию цены">убыванию цены</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__container">
+                    <div class="category__actions js_filter">
+                        <button class="category__actions-close-btn js_filter_close" type="button"></button>
+                        <div class="category__action">
+                            <div class="category__action-title">Фильтр:</div>
+                            <div class="category__action-container">
+                                <ul class="category__filters-list filters-list js_filter">
+                                    <li class="filters-list__item js_filter_tab">
+                                        <button type="button" class="filters-list__item-name js_filter_tab_top">Бренд
+                                            <span class="filters-list__item-arrow"></span>
+                                        </button>
+                                        <div class="filters-list__filter-values-wrap js_filter_tab_content">
+                                            <ul class="filters-list__filter-values">
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                    <span class="checkbox__square-wrap">
+                                                        <input type="checkbox" class="checkbox__input">
+                                                        <span class="checkbox__square"></span>
+                                                    </span>
+                                                        <span class="checkbox__text">Adidas</span>
+                                                    </label>
+                                                </li>
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                    <span class="checkbox__square-wrap">
+                                                        <input type="checkbox" class="checkbox__input">
+                                                        <span class="checkbox__square"></span>
+                                                    </span>
+                                                        <span class="checkbox__text">Nike</span>
+                                                    </label>
+                                                </li>
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                    <span class="checkbox__square-wrap">
+                                                        <input type="checkbox" class="checkbox__input">
+                                                        <span class="checkbox__square"></span>
+                                                    </span>
+                                                        <span class="checkbox__text">UnderArmour</span>
+                                                    </label>
+                                                </li>
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                    <span class="checkbox__square-wrap">
+                                                        <input type="checkbox" class="checkbox__input">
+                                                        <span class="checkbox__square"></span>
+                                                    </span>
+                                                        <span class="checkbox__text">VeryLongNameForBrand</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="filters-list__item js_filter_tab">
+                                        <button type="button" class="filters-list__item-name js_filter_tab_top">Размер
+                                            <span class="filters-list__item-arrow"></span>
+                                        </button>
+                                        <div class="filters-list__filter-values-wrap js_filter_tab_content">
+                                            <ul class="filters-list__filter-values">
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                        <span class="checkbox__square-wrap">
+                                                            <input type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__square"></span>
+                                                        </span>
+                                                        <span class="checkbox__text">40 (US 8,5)</span>
+                                                    </label>
+                                                </li>
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                        <span class="checkbox__square-wrap">
+                                                            <input type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__square"></span>
+                                                        </span>
+                                                        <span class="checkbox__text">41 (US 9)</span>
+                                                    </label>
+                                                </li>
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                        <span class="checkbox__square-wrap">
+                                                            <input type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__square"></span>
+                                                        </span>
+                                                        <span class="checkbox__text">42 (US 9,5)</span>
+                                                    </label>
+                                                </li>
+                                                <li class="filters-list__filter-values-item">
+                                                    <label class="filters-list__filter-checkbox checkbox">
+                                                        <span class="checkbox__square-wrap">
+                                                            <input type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__square"></span>
+                                                        </span>
+                                                        <span class="checkbox__text">43 (US 10)</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__products-wrap products-box">
+                        <div class="products-box__list grid">
+                            <div class="grid__item product">
+                                <a href="#" class="product__container">
+                                    <div class="product__img-wrap">
+                                        <img src="/dev_images/goods_1.jpg" alt="" class="product__img">
+                                    </div>
+                                    <div class="product__info">
+                                        <button type="button" class="product__to-favorites js_to_favourites">В избранное</button>
+                                        <div class="product__name">NIKE PREMIER II FG</div>
+                                        <div class="product__category">Мужская беговая обувь</div>
+                                        <div class="product__price">KZT 32&nbsp;000</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__item product">
+                                <a href="#" class="product__container">
+                                    <div class="product__img-wrap">
+                                        <img src="/dev_images/goods_2.jpg" alt="" class="product__img">
+                                    </div>
+                                    <div class="product__info">
+                                        <button type="button" class="product__to-favorites js_to_favourites is-favourite">В избранное</button>
+                                        <div class="product__name">NIKE PREMIER II FG</div>
+                                        <div class="product__category">Мужская беговая обувь</div>
+                                        <div class="product__price">KZT 32&nbsp;000</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__item product">
+                                <a href="#" class="product__container">
+                                    <div class="product__img-wrap">
+                                        <img src="/dev_images/goods_3.jpg" alt="" class="product__img">
+                                    </div>
+                                    <div class="product__info">
+                                        <button type="button" class="product__to-favorites js_to_favourites">В избранное</button>
+                                        <div class="product__name">NIKE PREMIER II FG</div>
+                                        <div class="product__category">Мужская беговая обувь</div>
+                                        <div class="product__price">KZT 32&nbsp;000</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__item product">
+                                <a href="#" class="product__container">
+                                    <div class="product__img-wrap">
+                                        <img src="/dev_images/goods_4.jpg" alt="" class="product__img">
+                                    </div>
+                                    <div class="product__info">
+                                        <button type="button" class="product__to-favorites js_to_favourites">В избранное</button>
+                                        <div class="product__name">NIKE PREMIER II FG</div>
+                                        <div class="product__category">Мужская беговая обувь</div>
+                                        <div class="product__price">KZT 32&nbsp;000</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__item product">
+                                <a href="#" class="product__container">
+                                    <div class="product__img-wrap">
+                                        <img src="/dev_images/goods_3.jpg" alt="" class="product__img">
+                                    </div>
+                                    <div class="product__info">
+                                        <button type="button" class="product__to-favorites js_to_favourites">В избранное</button>
+                                        <div class="product__name">NIKE PREMIER II FG</div>
+                                        <div class="product__category">Мужская беговая обувь</div>
+                                        <div class="product__price">KZT 32&nbsp;000</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__item product">
+                                <a href="#" class="product__container">
+                                    <div class="product__img-wrap">
+                                        <img src="/dev_images/goods_4.jpg" alt="" class="product__img">
+                                    </div>
+                                    <div class="product__info">
+                                        <button type="button" class="product__to-favorites js_to_favourites">В избранное</button>
+                                        <div class="product__name">NIKE PREMIER II FG</div>
+                                        <div class="product__category">Мужская беговая обувь</div>
+                                        <div class="product__price">KZT 32&nbsp;000</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products-box__products">
+                            <div class="products-box__viewed">Вы посмотрели 12 товаров из 1235</div>
+                            <div class="products-box__btn-wrap">
+                                <button class="products-box__btn button" type="button">
+                                    <span class="button__text">Загрузить еще</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

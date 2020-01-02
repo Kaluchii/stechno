@@ -1,0 +1,29 @@
+.page{
+  position: relative; // Для того что бы абсолютно позиционированные элементы не ужимались на маленьких экранах
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  font-size: 18px;
+  line-height: @lh-big;
+  font-family: @ff-main;
+  color: @c-main;
+  background-color: #ffffff;
+
+  &__header{}
+
+  &__mobile-header{
+    display: none;
+  }
+
+  &__breadcrumbs{
+    margin-top: 10px;
+  }
+
+  &__content{
+    flex-grow: 1;
+  }
+
+  &__footer{
+  }
+}

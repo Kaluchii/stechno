@@ -1,0 +1,24 @@
+.grid{
+  margin-top: -48px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--4-cols{
+    .grid{
+      &__item{
+        width: calc((100% - 120px) / 4);
+      }
+    }
+  }
+
+  &__item{
+    margin-top: 48px;
+    margin-left: 30px;
+    width: calc((100% - 90px) / 3);
+
+    &--hide-on-middle{}
+
+    &--hide-on-small{}
+  }
+}

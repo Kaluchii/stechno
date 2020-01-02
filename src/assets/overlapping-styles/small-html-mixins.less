@@ -1,0 +1,40 @@
+.bold{
+  font-weight: @fw-bold;
+}
+
+.normal{
+  font-weight: @fw-norm;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
+
+.hidden{
+  display: none;
+}
+
+/*.scroll-stop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}*/
+
+.visual-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hide-on-small{
+  @media all and(max-width: @screen-width-s){
+    display: none;
+  }
+}
+
+.stop-body-scroll{
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}

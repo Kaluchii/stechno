@@ -1,0 +1,72 @@
+@media all and (max-width: @screen-width-b){
+  .grid{
+  }
+}
+
+
+@media all and (max-width: @screen-width-m){
+  .grid{
+    &--4-cols{
+      .grid{
+        &__item{
+          width: calc((100% - 90px) / 3);
+        }
+      }
+    }
+
+    &__item{
+      &--hide-on-middle{
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 590px){
+  .grid{
+    &--4-cols{
+      .grid{
+        &__item{
+          width: calc((100% - 60px) / 2);
+        }
+      }
+    }
+
+    &__item{
+      width: calc((100% - 60px) / 2);
+
+      &--hide-on-small{
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: @screen-width-s){
+  .grid{
+  }
+}
+
+
+@media all and (max-width: 400px){
+  .grid{
+    margin-top: -35px;
+    margin-left: -20px;
+
+    &--4-cols{
+      .grid{
+        &__item{
+          width: calc((100% - 40px) / 2);
+        }
+      }
+    }
+
+    &__item{
+      margin-top: 35px;
+      margin-left: 20px;
+      width: calc((100% - 40px) / 2);
+    }
+  }
+}

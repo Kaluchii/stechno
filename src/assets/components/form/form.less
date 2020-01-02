@@ -1,0 +1,49 @@
+.form{
+  width: 100%;
+
+  &__field{
+    width: 100%;
+
+    &:nth-child(n+2){
+      margin-top: 25px;
+    }
+
+    &&--btn{
+      margin-top: 30px;
+    }
+  }
+
+  &__elements-row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
+  &__elements-row-item{
+    font-size: 14px;
+  }
+
+  &__fields-title{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: @fw-medium;
+
+    & + .form__field{
+      margin-top: 15px;
+    }
+
+    & + .form__elements-row{
+      margin-top: 10px;
+    }
+  }
+
+  &__radio{
+  }
+
+  &__submit-btn{
+  }
+}

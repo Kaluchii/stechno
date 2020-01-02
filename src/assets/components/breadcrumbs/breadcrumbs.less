@@ -1,0 +1,34 @@
+.breadcrumbs{
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: @fw-light;
+  text-transform: uppercase;
+
+  &__list{
+    margin: auto;
+    max-width: @max-width-wth-indent;
+    padding: 0 @hor-indent;
+    cursor: default;
+  }
+
+  &__item{
+    display: inline;
+  }
+
+  &__link{}
+
+  &__separator{
+    margin: 0 16px;
+    display: inline;
+    color: #666666;
+  }
+
+  &__current{
+    font-weight: @fw-medium;
+    cursor: default;
+  }
+
+  &__item-text{
+    color: @c-main;
+  }
+}

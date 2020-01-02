@@ -1,0 +1,41 @@
+/*
+@media all and (max-width: @screen-width-m){
+  @line-height: 2px;
+  @burger-height: 30px;
+  @burger-width: 40px;
+  @top-indent: (@burger-height - @line-height) / 2;
+
+  .hamburger{
+    padding: 15px @hor-indent-m;
+
+    .menu-is-open &{
+      .hamburger__line{
+        &--top{
+          top: @top-indent;
+        }
+
+        &--bottom{
+          top: @top-indent;
+        }
+      }
+    }
+
+    &__box{
+      height: @burger-height;
+      width: @burger-width;
+    }
+
+    &__line{
+      height: @line-height;
+
+      &--middle{
+        top: @top-indent;
+      }
+
+      &--bottom{
+        top: @top-indent * 2;
+      }
+    }
+  }
+}
+*/

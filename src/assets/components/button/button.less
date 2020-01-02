@@ -1,0 +1,76 @@
+.button{
+  position: relative;
+  overflow: hidden;
+  height: @input-height;
+  max-width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 18px;
+  font-weight: @fw-medium;
+  line-height: 1;
+  border-radius: 0;
+  text-align: center;
+  color: #ffffff;
+  transition: .2s;
+  user-select: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+  touch-action: manipulation;
+  outline: none;
+
+  &--s-small{
+    height: 34px;
+    font-size: 16px;
+  }
+
+  &--s-middle{
+    height: 38px;
+    font-size: 16px;
+  }
+
+  &--t-green{
+    background-color: @c-green;
+
+    &:hover{
+      background-color: lighten(40%, @c-green);
+    }
+  }
+
+  &--t-red{
+    background-color: @c-red;
+
+    &:hover{
+      background-color: lighten(40%, @c-red);
+    }
+  }
+
+  &:disabled{
+    background-color: #999999;
+    cursor: not-allowed;
+
+    &::after{
+      background-color: #999999;
+    }
+  }
+
+  &__text{
+  }
+
+  &.has-waiting{
+    color: transparent;
+    cursor: default;
+    pointer-events: none;
+
+    &::after{
+      width: 100%;
+      background-image: url('/img/loader.svg');
+      background-size: 80% 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
