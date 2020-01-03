@@ -1,0 +1,21 @@
+{% set title = "Поиск" %}
+{% set page = "searchpage" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    <main class="page__content content">
+        <div class="content__container">
+            {% include "blocks/breadcrumbs.njk" %}
+
+            <h1 class="content__title title-l1">ПОИСК</h1>
+            <div class="content__search search">
+                <form class="search__input-wrap">
+                    <input type="search" name="" class="search__input" placeholder="Введите название товара">
+                </form>
+                <p class="search__result-info">По вашему запросу ничего не найдено</p>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

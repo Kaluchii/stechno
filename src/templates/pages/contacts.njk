@@ -1,0 +1,31 @@
+{% set title = "Поиск" %}
+{% set page = "searchpage" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    <main class="page__content content">
+        <div class="content__container">
+            {% include "blocks/breadcrumbs.njk" %}
+
+            <h1 class="content__title title-l1">КОНТАКТЫ</h1>
+            <div class="content__contacts contacts">
+                <div class="contacts__blocks">
+                    <div class="contacts__block">
+                        E-mail: <br> astana7172kz@mail.ru <br> almati7272kz@mail.ru <br> shymkent7252kz@mail.ru <br> stechnokaraganda@mail.ru
+                    </div>
+                    <div class="contacts__block">
+                        Казахстан <br> г. Нур-Султан, ул. Кенесары 52 <br> г. Алматы, ул. Богенбай батыра 79 <br> г. Шымкент, ул. Аскарова 24 <br> г. Караганда, ул. Гоголя 52
+                    </div>
+                    <div class="contacts__block">
+                        Call Center 8 776 - 656-44-33 <br> Служба клиентской поддержки работает <br> с 10:00 до 20:00, без выходных.
+                    </div>
+                </div>
+                <div class="contacts__map">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

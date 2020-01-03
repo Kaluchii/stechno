@@ -4,18 +4,233 @@
 
 {% block content %}
     <main class="page__content content">
-        <div class="content__title-slider slider swiper-container js_banners_slider">
+        <div class="content__title-slider slider">
+            <div class="slider__images-wrap js_banners_slider">
+                <picture class="slider__img-wrap">
+                    <source srcset="/dev_images/slide_mob.jpg" media="(max-width: 860px)">
+                    <source srcset="/dev_images/slide.jpg" media="(min-width: 861px)">
+                    <img src="/dev_images/slide.jpg" alt="" class="slider__img">
+                </picture>
+                <picture class="slider__img-wrap">
+                    <source srcset="/dev_images/slide_mob.jpg" media="(max-width: 860px)">
+                    <source srcset="/dev_images/slide.jpg" media="(min-width: 861px)">
+                    <img src="/dev_images/slide.jpg" alt="" class="slider__img">
+                </picture>
+                <picture class="slider__img-wrap">
+                    <source srcset="/dev_images/slide_mob.jpg" media="(max-width: 860px)">
+                    <source srcset="/dev_images/slide.jpg" media="(min-width: 861px)">
+                    <img src="/dev_images/slide.jpg" alt="" class="slider__img">
+                </picture>
+            </div>
+            <div class="slider__navigation-wrap">
+                <div class="slider__navigation">
+                    <button class="slider__nav-btn slider__nav-btn--left"><</button>
+                    <button class="slider__nav-btn slider__nav-btn--right">></button>
+                </div>
+            </div>
         </div>
         <div class="content__last-products">
-            <div class="content__container"></div>
+            <div class="content__container last-products">
+                <h1 class="last-products__title title-with-borders">ПОНРАВИЛСЯ товар? ЗВОНИТЕ!</h1>
+                <ul class="last-products__list">
+                    <li class="last-products__item product">
+                        <a href="#" class="product__link">
+                            <p class="product__name">Fujitsu LifeBook E734 13.3" Intel Core i3 4100M E734</p>
+                            <div class="product__img-wrap">
+                                <img src="/dev_images/product_placeholder.jpg" alt="" class="product__img">
+                            </div>
+                            <div class="product__descr">Ноутбук Fujitsu LifeBook E734 13.3" Intel Core i5 4310M станет
+                                идеальным инструментом для работы в офисе или в пути. Он легкий и компактный,
+                                а высокоемкая батарея Li-ion...
+                            </div>
+                            <div class="product__price">85&nbsp;000 тенге</div>
+                            <div class="product__btn-wrap">
+                                <button class="product__btn button button--t-green" type="button">В КОРЗИНУ</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="last-products__item product">
+                        <a href="#" class="product__link">
+                            <p class="product__name">Fujitsu LifeBook E734 13.3" Intel Core i3 4100M E734</p>
+                            <div class="product__img-wrap">
+                                <img src="/dev_images/product_placeholder.jpg" alt="" class="product__img">
+                            </div>
+                            <div class="product__descr">Ноутбук Fujitsu LifeBook E734 13.3" Intel Core i5 4310M станет
+                                идеальным инструментом для работы в офисе или в пути. Он легкий и компактный,
+                                а высокоемкая батарея Li-ion...
+                            </div>
+                            <div class="product__price">85&nbsp;000 тенге</div>
+                            <div class="product__btn-wrap">
+                                <button class="product__btn button button--t-green" type="button">В КОРЗИНУ</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="last-products__item product">
+                        <a href="#" class="product__link">
+                            <p class="product__name">Fujitsu LifeBook E734 13.3" Intel Core i3 4100M E734</p>
+                            <div class="product__img-wrap">
+                                <img src="/dev_images/product_placeholder.jpg" alt="" class="product__img">
+                            </div>
+                            <div class="product__descr">Ноутбук Fujitsu LifeBook E734 13.3" Intel Core i5 4310M станет
+                                идеальным инструментом для работы в офисе или в пути. Он легкий и компактный,
+                                а высокоемкая батарея Li-ion...
+                            </div>
+                            <div class="product__price">85&nbsp;000 тенге</div>
+                            <div class="product__btn-wrap">
+                                <button class="product__btn button button--t-green" type="button">В КОРЗИНУ</button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="content__assortment">
-            <div class="content__container"></div>
+        <div class="content__assortment assortment">
+            <div class="assortment__container">
+                <p class="assortment__title title-with-borders">ЧТо мы предлагаем</p>
+                <ul class="assortment__list">
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <div class="assortment__img-wrap">
+                                <img src="/dev_images/cat_img_tv.png" alt="" class="assortment__img">
+                            </div>
+                            <span class="assortment__item-name">Телевизоры</span>
+                        </a>
+                        <ul class="assortment__sub-cats">
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">Б/У ТЕЛЕВИЗОРЫ</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">Б/У SMART ТЕЛЕВИЗОРЫ</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">НОВЫЕ ТЕЛЕВИЗОРЫ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <div class="assortment__img-wrap">
+                                <img src="/dev_images/cat_img_phone.png" alt="" class="assortment__img">
+                            </div>
+                            <span class="assortment__item-name">ТЕЛЕФОНЫ, ПЛАНШЕТЫ</span>
+                        </a>
+                        <ul class="assortment__sub-cats">
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">Планшеты Samsung</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">Планшеты ipad</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <div class="assortment__img-wrap">
+                                <img src="/dev_images/cat_img_comp.png" alt="" class="assortment__img">
+                            </div>
+                            <span class="assortment__item-name">Компьютеры</span>
+                        </a>
+                        <ul class="assortment__sub-cats">
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">компьютеры</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">Моноблоки</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">ноутбуки</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">периферийные устройства</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <div class="assortment__img-wrap">
+                                <img src="/dev_images/cat_img_games.png" alt="" class="assortment__img">
+                            </div>
+                            <span class="assortment__item-name">Игровые приставки</span>
+                        </a>
+                        <ul class="assortment__sub-cats">
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">sony playstation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <div class="assortment__img-wrap">
+                                <img src="/dev_images/cat_img_prist.png" alt="" class="assortment__img">
+                            </div>
+                            <span class="assortment__item-name">приставки</span>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__item-link">
+                            <div class="assortment__img-wrap">
+                                <img src="/dev_images/cat_img_cron.png" alt="" class="assortment__img">
+                            </div>
+                            <span class="assortment__item-name">Кронштейны</span>
+                        </a>
+                        <ul class="assortment__sub-cats">
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">поворотные</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">Прямые</a>
+                            </li>
+                            <li class="assortment__sub-cat">
+                                <a href="#" class="assortment__sub-cat-link">с наклоном</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="content__request request">
+            <div class="request__container">
+                <p class="request__title">Оставьте заявку и наш менеджер свяжется с вами</p>
+                <form action="" class="request__form request-form">
+                    <div class="request-form__field field">
+                        <label class="field__container">
+                            <input type="text" class="field__input" name="product-name" placeholder="Наименование товара*" autocomplete="off">
+                        </label>
+                    </div>
+                    <div class="request-form__field field">
+                        <label class="field__container">
+                            <input type="text" class="field__input" name="user-name" placeholder="Имя*" autocomplete="name">
+                        </label>
+                    </div>
+                    <div class="request-form__field field">
+                        <label class="field__container">
+                            <input type="tel" class="field__input" name="user-phone" placeholder="Телефон*" autocomplete="tel" inputmode="tel">
+                        </label>
+                    </div>
+                    <div class="request-form__field request-form__field--btn">
+                        <button class="request-form__btn button button--t-red">оставить заявку</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="content__buying">
-            <div class="content__container"></div>
+            <div class="content__container buying">
+                <p class="buying__title title-with-borders">скупка техники</p>
+                <div class="buying__text"></div>
+                <div class="buying__img-wrap">
+                    <img src="/img/devices.jpg" alt="" class="buying__img">
+                </div>
+                <div class="buying__btn-wrap">
+                    <a href="#" class="buying__btn button button--t-green">подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="content__seo-text seo-text">
+            <div class="seo-text__text-block text-block">
+                <h2>Заголовок</h2>
+                <p>Идейные соображения высшего порядка, а также выбранный нами инновационный путь выявляет срочную потребность вывода текущих активов. Сложно сказать, почему действия представителей оппозиции представлены в исключительно положительном свете. Являясь всего лишь частью общей картины, действия представителей оппозиции лишь добавляют фракционных разногласий и функционально разнесены на независимые элементы.</p>
+                <p>Но действия представителей оппозиции формируют глобальную экономическую сеть и при этом - ассоциативно распределены по отраслям. Вот вам яркий пример современных тенденций - курс на социально-ориентированный национальный проект выявляет срочную потребность новых принципов формирования материально-технической и кадровой базы. Таким образом, семантический разбор внешних противодействий напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач. Также как внедрение современных методик создаёт предпосылки для системы обучения кадров, соответствующей насущным потребностям.</p>
+            </div>
         </div>
     </main>
 {% endblock %}

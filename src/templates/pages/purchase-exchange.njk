@@ -1,0 +1,47 @@
+{% set title = "Поиск" %}
+{% set page = "searchpage" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    <main class="page__content content">
+        <div class="content__container">
+            {% include "blocks/breadcrumbs.njk" %}
+
+            <h1 class="content__title title-l1">СКУПКА/ОБМЕН</h1>
+            <div class="content__text-block text-block">
+                <p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Quis, vero.</p>
+                <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Cumque eaque eveniet, hic nisi perferendis quia recusandae! Architecto delectus fugit optio.</p>
+            </div>
+        </div>
+        <div class="content__what-you-need what-you-need">
+            <div class="what-you-need__container">
+                <p class="what-you-need__title title-with-borders">ЧТо нужно сделать</p>
+                <div class="what-you-need__cards">
+                    <div class="what-you-need__card">
+                        <div class="what-you-need__card-text">Оставить <br>
+                            <span class="what-you-need__big-text">ЗАЯВКУ</span><br>
+                            или позвонить
+                        </div>
+                    </div>
+                    <div class="what-you-need__card">
+                        <div class="what-you-need__card-text">Прийти в наш <br>
+                            <span class="what-you-need__big-text">МАГАЗИН</span>
+                        </div>
+                    </div>
+                    <div class="what-you-need__card">
+                        <div class="what-you-need__card-text">Оценка <br>
+                            <span class="what-you-need__big-text">ТОВАРА</span>
+                        </div>
+                    </div>
+                    <div class="what-you-need__card">
+                        <div class="what-you-need__card-text">Получение денег <br>
+                            <span class="what-you-need__big-text">ИЛИ ОБМЕН</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
