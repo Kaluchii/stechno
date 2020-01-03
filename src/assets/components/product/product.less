@@ -1,8 +1,16 @@
 .product{
   max-width: 265px;
-  box-sizing: border-box;
 
-  &__container{}
+  &__link{}
+
+  &__name{
+    font-size: 18px;
+    line-height: @lh-medium;
+    font-weight: @fw-bold;
+    word-break: break-word;
+  }
+
+  &__descr{}
 
   &__img-wrap{
     position: relative;
@@ -37,39 +45,22 @@
     }
   }
 
-  &__info{
-    margin-top: 15px;
-    color: @c-main;
-  }
-
-  &__name{
-    font-size: 18px;
-    line-height: @lh-medium;
-    font-weight: @fw-bold;
-    word-break: break-word;
-  }
-
   &__price{
     display: inline-block;
     margin-top: 6px;
     font-size: 14px;
     font-weight: @fw-bold;
   }
-/*
+
+  &__btn-wrap{}
+
+  &__btn{}
+
+  /*
   &__add-to-basket{
     margin-top: 9px;
     font-size: 14px;
     outline: none;
     cursor: pointer;
   }*/
-}
-
-
-@keyframes heartbeat{
-  20%{
-    transform:scale(0.9)
-  }
-  40%{
-    transform:scale(1)
-  }
 }

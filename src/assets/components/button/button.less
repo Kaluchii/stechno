@@ -35,16 +35,16 @@
   &--t-green{
     background-color: @c-green;
 
-    &:hover{
-      background-color: lighten(40%, @c-green);
+    &:hover, &:focus{
+      background-color: lighten(@c-green, 7%);
     }
   }
 
   &--t-red{
     background-color: @c-red;
 
-    &:hover{
-      background-color: lighten(40%, @c-red);
+    &:hover, &:focus{
+      background-color: lighten(@c-red, 7%);
     }
   }
 

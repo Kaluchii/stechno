@@ -1,0 +1,26 @@
+.title-with-borders{
+  position: relative;
+  padding: 17px 5px 15px;
+  font-size: 36px;
+  line-height: @lh-small;
+  font-weight: @fw-black;
+  color: @c-red;
+  text-transform: uppercase;
+
+  &::before, &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: @c-red;
+  }
+
+  &::before{
+    top: 0;
+  }
+
+  &::after{
+    bottom: 0;
+  }
+}
