@@ -9,7 +9,7 @@
     &--4-cols{
       .grid{
         &__item{
-          width: calc((100% - 90px) / 3);
+          width: calc((100% - 75px) / 3);
         }
       }
     }
@@ -23,18 +23,18 @@
 }
 
 
-@media all and (max-width: 590px){
+@media all and (max-width: 740px){
   .grid{
     &--4-cols{
       .grid{
         &__item{
-          width: calc((100% - 60px) / 2);
+          width: calc((100% - 50px) / 2);
         }
       }
     }
 
     &__item{
-      width: calc((100% - 60px) / 2);
+      width: calc((100% - 50px) / 2);
 
       &--hide-on-small{
         display: none;
@@ -52,21 +52,16 @@
 
 @media all and (max-width: 400px){
   .grid{
-    margin-top: -35px;
-    margin-left: -20px;
-
     &--4-cols{
       .grid{
         &__item{
-          width: calc((100% - 40px) / 2);
+          width: 100%;
         }
       }
     }
 
     &__item{
-      margin-top: 35px;
-      margin-left: 20px;
-      width: calc((100% - 40px) / 2);
+      width: 100%;
     }
   }
 }

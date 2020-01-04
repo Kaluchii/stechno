@@ -1,35 +1,60 @@
 .content{
   &__container{
-    margin: 32px auto 0;
+    margin: 0 auto;
     max-width: @max-width-wth-indent;
+    padding-left: @hor-indent;
+    padding-right: @hor-indent;
+
+    & + .content__request{
+      margin-top: 60px;
+    }
   }
 
   &__breadcrumbs{
-    margin-top: 10px;
+    margin-top: 15px;
+  }
+
+  &__title{
+    margin-top: 15px;
+  }
+
+  &__text-block{
+    margin-top: 35px;
   }
 
   &__title-slider{
-    margin: 32px auto 0;
+    margin: 0 auto;
     max-width: @full-width;
   }
 
   &__last-products{
-    margin: 32px auto 0;
   }
 
   &__assortment{
-    margin: 32px auto 0;
   }
 
   &__request{
-    margin: 32px auto 0;
   }
 
   &__buying{
-    margin: 32px auto 0;
+  }
+
+  &__blog{
+    margin-top: 35px;
+  }
+
+  &__contacts{
+    margin-top: 35px;
+  }
+
+  &__search{
+    margin-top: 35px;
+  }
+
+  &__what-you-need{
+    margin-top: 50px;
   }
 
   &__seo-text{
-    margin: 32px auto 0;
   }
 }

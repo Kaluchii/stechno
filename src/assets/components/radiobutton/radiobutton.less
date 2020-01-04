@@ -5,13 +5,14 @@
   &:hover{
     .radiobutton{
       &__circle{
-        box-shadow: 0 0 0 1px #000000;
+        box-shadow: 0 0 0 2px @c-green-light;
       }
     }
   }
 
   &__circle-wrap{
     position: relative;
+    transform: translateY(2px);
   }
 
   &__input{
@@ -38,7 +39,7 @@
     &:focus{
       & ~ .radiobutton{
         &__circle{
-          box-shadow: 0 0 0 1px #000000;
+          box-shadow: 0 0 0 2px @c-green-light;
         }
       }
     }
@@ -46,11 +47,10 @@
 
   &__circle{
     position: relative;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     display: block;
-    border: 1px solid #000000;
-    background-color: #ffffff;
+    background-color: @c-gray;
     border-radius: 50%;
     cursor: pointer;
     transition: .1s;
@@ -61,10 +61,10 @@
       z-index: -1;
       top: 2px;
       left: 2px;
-      width: 6px;
-      height: 6px;
+      width: 12px;
+      height: 12px;
       opacity: 0;
-      background-color: #000000;
+      background-color: @c-green;
       border-radius: 50%;
       transition: .1s;
       transform: scale(0.5);
@@ -72,7 +72,8 @@
   }
 
   &__text{
-    padding-left: 6px;
+    padding-left: 12px;
+    color: @c-main;
     cursor: pointer;
     user-select: none;
   }

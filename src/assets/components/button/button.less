@@ -36,7 +36,7 @@
     background-color: @c-green;
 
     &:hover, &:focus{
-      background-color: lighten(@c-green, 7%);
+      background-color: @c-green-light;
     }
   }
 
@@ -44,7 +44,7 @@
     background-color: @c-red;
 
     &:hover, &:focus{
-      background-color: lighten(@c-red, 7%);
+      background-color: @c-red-light;
     }
   }
 
@@ -58,6 +58,27 @@
   }
 
   &__text{
+    &--not-order{}
+
+    &--in-order{
+      display: none;
+    }
+  }
+  
+  &.in-order{
+    background-color: @c-orange;
+
+    .button{
+      &__text{
+        &--not-order{
+          display: none;
+        }
+
+        &--in-order{
+          display: block;
+        }
+      }
+    }
   }
 
   &.has-waiting{
@@ -66,6 +87,11 @@
     pointer-events: none;
 
     &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
       width: 100%;
       background-image: url('/img/loader.svg');
       background-size: 80% 80%;

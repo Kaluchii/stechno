@@ -20,8 +20,10 @@
     height: @input-height;
     width: 100%;
     padding: 6px 20px;
+    font-size: 16px;
     line-height: 1.5;
-    border: 1px solid #E5E5E5;
+    font-weight: @fw-light;
+    border: 1px solid @c-gray;
     background-color: #ffffff;
     color: @c-main;
     outline: none;
@@ -37,11 +39,11 @@
     }
 
     &:hover, &:focus{
-      border-color: #E5E5E5;
+      box-shadow: 0 0 0 1px @c-main;
     }
 
     &:focus{
-      box-shadow: 0 0 0 1px #E5E5E5;
+      box-shadow: 0 0 0 2px @c-main;
     }
 
     &[readonly]{

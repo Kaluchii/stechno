@@ -1,0 +1,31 @@
+@media all and (max-width: @screen-width-b){
+  .request-form{
+  }
+}
+
+
+@media all and (max-width: @screen-width-m){
+  .request-form{
+    flex-direction: column;
+
+    &__field{
+      &--btn{
+      }
+
+      & + &{
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+
+    &__btn{
+      width: 100%;
+    }
+  }
+}
+
+
+@media all and (max-width: @screen-width-s){
+  .request-form{
+  }
+}

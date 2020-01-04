@@ -1,0 +1,34 @@
+.contacts{
+  &__blocks{
+    margin-top: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: @lh-medium;
+  }
+
+  &__block{
+    position: relative;
+    margin-top: 25px;
+    width: 50%;
+    max-width: 450px;
+    padding-left: 10px;
+    padding-right: 30px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: .5em;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: @c-main;
+    }
+  }
+
+  &__map{
+    margin-top: 50px;
+    height: 400px;
+    background: url('../img/sprite.svg#loader') no-repeat center / 50px 50px, #e8e8e8;
+  }
+}

@@ -1,0 +1,27 @@
+.last-products{
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  &__title-wrap{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title{}
+
+  &__list{
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    margin-top: 25px;
+    margin-left: 30px;
+    width: calc((100% - 90px) / 3);
+
+    &:nth-child(n + 4){
+      display: none;
+    }
+  }
+}

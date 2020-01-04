@@ -1,0 +1,86 @@
+.assortment{
+  background: url('../img/pattern.jpg') center;
+
+  &__container{
+    margin: 0 auto;
+    max-width: @max-width-wth-indent;
+    padding: 75px @hor-indent 70px;
+  }
+
+  &__title-wrap{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title{}
+
+  &__list{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    margin-top: 30px;
+    width: 30%;
+  }
+
+  &__item-link{
+    color: @c-main;
+    transition: .1s;
+
+    &:hover, &:focus{
+      color: @c-main-darken;
+    }
+  }
+
+  &__item-img-wrap{
+    font-size: 0;
+  }
+
+  &__item-img{}
+
+  &__item-name{
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: @fw-bold;
+    text-transform: uppercase;
+  }
+
+  &__sub-cats{
+    margin-top: 15px;
+  }
+
+  &__sub-cat{
+    position: relative;
+    padding-left: 22px;
+    font-weight: @fw-norm;
+    line-height: @lh-medium;
+    text-transform: uppercase;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      background-color: @c-green;
+      border-radius: 3px;
+    }
+
+    & + &{
+      margin-top: 0.75em;
+    }
+  }
+
+  &__sub-cat-link{
+    color: @c-main;
+    transition: .1s;
+
+    &:hover, &:focus{
+      color: @c-main-darken;
+    }
+  }
+}

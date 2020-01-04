@@ -1,0 +1,83 @@
+.what-you-need{
+  background: url('../img/pattern.jpg') center;
+
+  &__container{
+    margin: 0 auto;
+    max-width: @max-width-wth-indent;
+    padding: 75px @hor-indent 90px;
+  }
+
+  &__title-wrap{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title{}
+
+  &__cards{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card{
+    width: calc((100% - 90px) / 4);
+  }
+
+  &__card-container{
+    position: relative;
+    padding-top: 100%;
+    background: linear-gradient(135deg, @c-green 0%, @c-green 50.00001%, #ffffff 50%, #ffffff 100%);
+    box-shadow: 0 4px 4px @c-gray;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 17%;
+      left: 17%;
+      height: 24.380952%;
+      width: 24.380952%;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &--step1{
+      &::after{
+        background-image: url('../img/step_1.svg');
+      }
+    }
+
+    &--step2{
+      &::after{
+        background-image: url('../img/step_2.svg');
+      }
+    }
+
+    &--step3{
+      &::after{
+        background-image: url('../img/step_3.svg');
+      }
+    }
+
+    &--step4{
+      &::after{
+        background-image: url('../img/step_4.svg');
+      }
+    }
+  }
+
+  &__card-text{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-align: right;
+    line-height: 1.125;
+    font-weight: @fw-medium;
+  }
+
+  &__big-text{
+    font-size: 1.75em;
+  }
+}

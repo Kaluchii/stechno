@@ -1,0 +1,50 @@
+@media all and (max-width: @screen-width-b){
+  .last-products{
+  }
+}
+
+
+@media all and (max-width: @screen-width-m){
+  .last-products{
+  }
+}
+
+
+@media all and (max-width: 740px){
+  .last-products{
+    &__list{
+      margin-left: -25px;
+    }
+
+    &__item{
+      margin-left: 25px;
+      width: calc((100% - 50px) / 2);
+
+      &:nth-child(4){
+        display: block;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: @screen-width-s){
+  .last-products{
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+
+@media all and (max-width: 400px){
+  .last-products{
+    &__list{
+      margin-left: 0;
+    }
+
+    &__item{
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

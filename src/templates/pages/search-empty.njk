@@ -10,12 +10,20 @@
 
             <h1 class="content__title title-l1">ПОИСК</h1>
             <div class="content__search search">
-                <form class="search__input-wrap">
-                    <input type="search" name="" class="search__input" placeholder="Введите название товара">
+                <form class="search__fields-wrap" method="get" action="/">
+                    <div class="search__field field">
+                        <label class="field__container">
+                            <input type="text" class="field__input" name="s" placeholder="Поиск по каталогу" inputmode="search">
+                        </label>
+                    </div>
+                    <div class="search__btn-wrap">
+                        <button class="search__btn button button--t-green">поиск</button>
+                    </div>
                 </form>
                 <p class="search__result-info">По вашему запросу ничего не найдено</p>
             </div>
         </div>
+        {% include "blocks/request.njk" %}
     </main>
 
 {% endblock %}

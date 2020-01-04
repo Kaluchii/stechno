@@ -1,0 +1,73 @@
+@media all and (max-width: @screen-width-b){
+  .what-you-need{
+    &__card-text{
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media all and (max-width: @screen-width-m){
+  .what-you-need{
+    &__container{
+      padding: 55px @hor-indent-m;
+    }
+
+    &__card{
+      width: calc(50% - 15px);
+
+      &:nth-child(n + 3){
+        margin-top: 45px;
+      }
+    }
+
+    &__card-text{
+      font-size: 24px;
+    }
+  }
+}
+
+
+@media all and (max-width: 810px){
+  .what-you-need{
+    &__card-text{
+      font-size: 20px;
+    }
+  }
+}
+
+
+@media all and (max-width: 680px){
+  .what-you-need{
+    &__card-text{
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media all and (max-width: @screen-width-s){
+  .what-you-need{
+    &__container{
+      padding: 40px @hor-indent-s;
+    }
+
+    &__cards{
+      margin-top: 30px;
+    }
+
+    &__card{
+      width: calc(50% - 7.5px);
+
+      &:nth-child(n + 3){
+        margin-top: 25px;
+      }
+    }
+
+    &__card-text{
+      right: 8px;
+      bottom: 8px;
+      font-size: 10px;
+    }
+  }
+}

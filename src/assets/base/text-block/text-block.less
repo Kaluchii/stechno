@@ -1,6 +1,5 @@
 .text-block{
   font-size: 18px;
-  line-height: @lh-big;
   word-break: break-word;
   overflow-wrap: break-word;
   overflow: auto;
@@ -14,21 +13,6 @@
     clear: both;
   }
 
-  &--t-white{
-    color: #ffffff;
-
-    a{
-      font-weight: @fw-medium;
-
-      &:hover, &:focus{
-      }
-    }
-  }
-
-  &--s-medium{
-    //font-size: 20px;
-  }
-
   &--s-small{
     //font-size: 18px;
   }
@@ -37,21 +21,21 @@
     margin: 1em 0 .2em;
     font-size: 1.5em;
     line-height: @lh-medium;
-    font-weight: @fw-norm;
+    font-weight: @fw-medium;
   }
 
   h2{
     margin: 1em 0 .2em;
-    font-size: 1.3em;
+    font-size: 1.225em;
     line-height: @lh-medium;
-    font-weight: @fw-norm;
+    font-weight: @fw-medium;
   }
 
   h3{
     margin: 1.125em 0 .2em;
     font-size: 1.15em;
     line-height: @lh-medium;
-    font-weight: @fw-norm;
+    font-weight: @fw-medium;
   }
 
   h4{
@@ -74,9 +58,12 @@
 
   a{
     cursor: pointer;
+    color: @c-green;
     transition: .1s;
 
     &:hover, &:focus{
+      color: @c-green-light;
+      text-decoration: underline;
     }
   }
 
@@ -150,7 +137,7 @@
   }
 
   ul{
-    margin: 1em 0 .5em;
+    margin: .5em 0;
     padding-left: 1.25em;
 
     li{
@@ -171,7 +158,7 @@
   }
 
   ol{
-    margin: 1em 0 .5em;
+    margin: .5em 0;
     padding-left: 1.25em;
     counter-reset: list;
 
@@ -224,28 +211,4 @@
   p:first-child{
     margin-top: 0;
   }
-
-  //&__img-wrap{
-  //  margin: 20px 13.1578947% 20px 7.8947368%;
-  //
-  //  &--left{
-  //    margin-right: 30px;
-  //    float: left;
-  //    max-width: 50%;
-  //  }
-  //
-  //  &--right{
-  //    margin-left: 30px;
-  //    float: right;
-  //    max-width: 50%;
-  //  }
-  //
-  //  img{
-  //    display: block;
-  //  }
-  //
-  //  & + p{
-  //    margin-top: 25px;
-  //  }
-  //}
 }
