@@ -1,2 +1,89 @@
 .category{
+  position: relative;
+  display: flex;
+
+  &__filter-toggle-btn{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -55px;
+    width: 30px;
+    height: 45px;
+    background: url('../img/sprite.svg#filter') no-repeat center / 24px 20px;
+    outline: none;
+  }
+
+  &__filter-wrap{}
+
+  &__filter-close-btn{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 12px;
+      width: 26px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: @c-main;
+    }
+
+    &::before{
+      transform: rotate(45deg);
+    }
+
+    &::after{
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__filter-title{
+    font-weight: @fw-medium;
+  }
+
+  &__filter{
+    margin-top: 15px;
+    width: 200px;
+    flex-shrink: 0;
+  }
+
+  &__filter-btn-wrap{
+    margin-top: 30px;
+  }
+
+  &__filter-btn{}
+
+  &__block{
+    margin-left: 50px;
+  }
+
+  &__block-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 20px;
+    border-bottom: 2px solid @c-gray;
+  }
+
+  &__total{
+    font-weight: @fw-medium;
+    color: @c-green;
+  }
+
+  &__sort{}
+
+  &__sort-text{}
+
+  &__sort-select{}
+
+  &__products-box{
+    margin-top: 35px;
+  }
 }

@@ -10,7 +10,31 @@
 }
 
 
+@media all and (max-width: 760px){
+  .characteristics{
+    &__caption{
+      padding: 15px 10px;
+    }
+
+    &__tr{
+      padding: 10px;
+    }
+  }
+}
+
+
 @media all and (max-width: @screen-width-s){
   .characteristics{
+    font-size: 16px;
+  }
+}
+
+
+@media all and (max-width: 370px){
+  .characteristics{
+    &__tr{
+      padding: 10px 0;
+      font-size: 14px;
+    }
   }
 }

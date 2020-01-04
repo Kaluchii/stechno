@@ -17,8 +17,8 @@
                         </div>
                         <div class="product-card__nav-slider-wrap">
                             <div class="product-card__nav-slider"></div>
-                            <div class="product-card__btns">
-                                <button class="product-card__btn product-card__btn--left" type="button"></button>
+                            <div class="product-card__nav-btns">
+                                <button class="product-card__nav-btn product-card__btn--left" type="button"></button>
                                 <button class="product-card__btn product-card__btn--right" type="button"></button>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                         </div>
                         <div class="product-card__price">85&nbsp;900 тенге</div>
                         <div class="product-card__btn-wrap">
-                            <button class="product__btn button button--s-middle button--t-green" type="button">
+                            <button class="product-card__btn button button--s-middle button--t-green js_to_checkout_btn in-order" type="button">
                                 <span class="button__text button__text--not-order">В КОРЗИНУ</span>
                                 <span class="button__text button__text--in-order">В КОРЗИНЕ</span>
                             </button>
@@ -65,6 +65,7 @@
                 </table>
             </div>
         </div>
+        {% include "blocks/request.njk" %}
     </main>
 
 {% endblock %}

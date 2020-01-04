@@ -6,11 +6,30 @@
 
 @media all and (max-width: @screen-width-m){
   .product-card{
+    &__price{
+      text-align: right;
+
+      &::after{
+        left: auto;
+        right: 0;
+      }
+    }
+
+    &__btn{
+      margin-left: auto;
+    }
+
+    &__characteristics{
+      margin-top: 50px;
+    }
   }
 }
 
 
 @media all and (max-width: @screen-width-s){
   .product-card{
+    &__characteristics{
+      margin-top: 30px;
+    }
   }
 }

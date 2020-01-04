@@ -1,0 +1,18 @@
+{% set title = "Поиск" %}
+{% set page = "searchpage" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    <main class="page__content content">
+        <div class="content__container">
+            {% include "blocks/breadcrumbs.njk" %}
+
+            <h1 class="content__title title-l1">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+            <form class="content__checkout checkout">
+                <div class="checkout__empty-text">Корзина пуста</div>
+            </form>
+        </div>
+    </main>
+
+{% endblock %}
