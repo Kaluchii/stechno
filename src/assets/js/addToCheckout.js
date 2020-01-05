@@ -1,4 +1,5 @@
 ;$(function () {
+
     $('.js_to_checkout_btn').on('click', function (e) {
         e.preventDefault();
 
@@ -10,4 +11,5 @@
 
         /* Код добавления товара в корзину */
     });
+
 });

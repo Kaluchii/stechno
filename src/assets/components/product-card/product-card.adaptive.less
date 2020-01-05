@@ -1,5 +1,8 @@
 @media all and (max-width: @screen-width-b){
   .product-card{
+    &__info{
+      width: calc(100% - 400px);
+    }
   }
 }
 
@@ -26,10 +29,37 @@
 }
 
 
+@media all and (max-width: 800px){
+  .product-card{
+    &__container{
+      flex-direction: column;
+    }
+
+    &__info{
+      margin-top: 40px;
+      width: 100%;
+    }
+  }
+}
+
+
 @media all and (max-width: @screen-width-s){
   .product-card{
+    &__nav-btn{
+      width: calc(50% - 4px);
+    }
+
     &__characteristics{
       margin-top: 30px;
+    }
+  }
+}
+
+
+@media all and (max-width: 360px){
+  .product-card{
+    &__nav-btns{
+      padding-right: 0;
     }
   }
 }

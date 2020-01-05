@@ -10,96 +10,106 @@
 
             <h1 class="content__title title-l1">ТЕЛЕВИЗОРЫ</h1>
             <div class="content__category category">
-                <ul class="category__filter filter">
-                    <li class="filter__item">
-                        <div class="filter__item-name">Бренд</div>
-                        <ul class="filter__filter-values">
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                    <span class="checkbox__square-wrap">
-                                                        <input type="checkbox" class="checkbox__input">
-                                                        <span class="checkbox__square"></span>
-                                                    </span>
-                                    <span class="checkbox__text">Adidas</span>
-                                </label>
-                            </li>
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                    <span class="checkbox__square-wrap">
-                                                        <input type="checkbox" class="checkbox__input">
-                                                        <span class="checkbox__square"></span>
-                                                    </span>
-                                    <span class="checkbox__text">Nike</span>
-                                </label>
-                            </li>
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                    <span class="checkbox__square-wrap">
-                                                        <input type="checkbox" class="checkbox__input">
-                                                        <span class="checkbox__square"></span>
-                                                    </span>
-                                    <span class="checkbox__text">UnderArmour</span>
-                                </label>
-                            </li>
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                    <span class="checkbox__square-wrap">
-                                                        <input type="checkbox" class="checkbox__input">
-                                                        <span class="checkbox__square"></span>
-                                                    </span>
-                                    <span class="checkbox__text">VeryLongNameForBrand</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="filter__item">
-                        <div class="filter__item-name">Размер</div>
-                        <ul class="filter__filter-values">
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                        <span class="checkbox__square-wrap">
-                                                            <input type="checkbox" class="checkbox__input">
-                                                            <span class="checkbox__square"></span>
-                                                        </span>
-                                    <span class="checkbox__text">40 (US 8,5)</span>
-                                </label>
-                            </li>
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                        <span class="checkbox__square-wrap">
-                                                            <input type="checkbox" class="checkbox__input">
-                                                            <span class="checkbox__square"></span>
-                                                        </span>
-                                    <span class="checkbox__text">41 (US 9)</span>
-                                </label>
-                            </li>
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                        <span class="checkbox__square-wrap">
-                                                            <input type="checkbox" class="checkbox__input">
-                                                            <span class="checkbox__square"></span>
-                                                        </span>
-                                    <span class="checkbox__text">42 (US 9,5)</span>
-                                </label>
-                            </li>
-                            <li class="filter__filter-values-item">
-                                <label class="filter__filter-checkbox checkbox">
-                                                        <span class="checkbox__square-wrap">
-                                                            <input type="checkbox" class="checkbox__input">
-                                                            <span class="checkbox__square"></span>
-                                                        </span>
-                                    <span class="checkbox__text">43 (US 10)</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <button class="category__filter-toggle-btn js_filter_toggle" type="button"></button>
+
+                <form class="category__filter-wrap js_filter" method="post">
+                    <button class="category__filter-close-btn js_filter_close" type="button"></button>
+                    <div class="category__filter-title">ФИЛЬТР:</div>
+                    <ul class="category__filter filter">
+                        <li class="filter__item">
+                            <div class="filter__item-name">Бренд</div>
+                            <ul class="filter__values">
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">Adidas</span>
+                                    </label>
+                                </li>
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">Nike</span>
+                                    </label>
+                                </li>
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">UnderArmour</span>
+                                    </label>
+                                </li>
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">VeryLongNameForBrand</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="filter__item">
+                            <div class="filter__item-name">Размер</div>
+                            <ul class="filter__values">
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">40 (US 8,5)</span>
+                                    </label>
+                                </li>
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">41 (US 9)</span>
+                                    </label>
+                                </li>
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">42 (US 9,5)</span>
+                                    </label>
+                                </li>
+                                <li class="filter__values-item">
+                                    <label class="filter__checkbox checkbox">
+                                        <span class="checkbox__square-wrap">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__square"></span>
+                                        </span>
+                                        <span class="checkbox__text">43 (US 10)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="category__filter-btn-wrap">
+                        <button class="category__filter-btn button button--t-green button--s-middle">применить</button>
+                    </div>
+                </form>
+
                 <div class="category__block">
                     <div class="category__block-top">
                         <div class="category__total">Найдено 0 товаров</div>
                         <div class="category__sort">
                             <span class="category__sort-text">Сортировать по:</span>
-                            <div class="category__sort-select select select--without-borders js_select" aria-label="Сортировка">
+                            <div class="category__sort-select select js_select" aria-label="Сортировка">
                                 <input type="hidden" class="js_select_input" name="sort" value="ask" autocomplete="off">
                                 <div class="select__header js_select_btn">
                                     <div class="select__current js_current_value">возрастанию цены</div>
@@ -107,6 +117,7 @@
                                 </div>
                                 <ul class="select__list" role="listbox" aria-expanded="false">
                                     <li class="select__list-item js_select_option" role="option" data-value="desk" data-text="убыванию цены">убыванию цены</li>
+                                    <li class="select__list-item js_select_option" role="option" data-value="asc" data-text="возрастанию цены">возрастанию цены</li>
                                 </ul>
                             </div>
                         </div>
@@ -117,6 +128,7 @@
                 </div>
             </div>
         </div>
+        {% include "blocks/request.njk" %}
     </main>
 
 {% endblock %}

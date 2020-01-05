@@ -1,79 +1,33 @@
 .select{
   position: relative;
+  display: inline;
   user-select: none;
 
-  &--without-borders{
-    display: inline;
-
-    .select{
-      &__header{
-        display: inline;
-        height: auto;
-        padding-left: 0;
-        line-height: 1;
-        border: none;
-        box-shadow: none !important;
-      }
-
-      &__current{
-        display: inline;
-      }
-
-      &__arrow{
-        right: 0;
-      }
-
-      &__list{
-        left: auto;
-        right: 15px;
-        width: auto;
-        border: none;
-      }
-
-      &__list-item{
-        padding: 5px 15px;
-        cursor: pointer;
-        transition: .1s;
-
-        &:hover{
-          background-color: transparent;
-          color: @c-minor;
-        }
-
-        &.is-active{
-          background-color: transparent;
-          color: @c-minor;
-        }
-      }
-    }
-  }
-
   &__header{
-    height: @input-height;
-    padding: 0 20px 0 15px;
-    line-height: @input-height - 2;
+    display: inline;
+    height: auto;
+    padding-right: 21px;
+    line-height: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    border: 1px solid @c-minor;
     color: @c-main;
     cursor: pointer;
     transition: .1s;
 
     .is-open &, &:hover, &:focus{
-      box-shadow: 0 0 0 1px @c-main;
       border-color: @c-main;
     }
   }
 
   &__current{
-    //font-weight: @fw-medium;
+    display: inline;
   }
 
   &__arrow{
     position: absolute;
     top: 50%;
-    right: 8px;
+    right: 0;
     transform: translateY(-2px);
     border: 4.5px solid transparent;
     border-top-color: @c-main;
@@ -81,22 +35,24 @@
 
   &__list{
     position: absolute;
-    left: 0;
-    top: 100%;
+    top: calc(100% + 5px);
+    right: 0;
     z-index: 1;
-    width: 100%;
+    width: auto;
     padding: 5px 0;
     max-height: 220px;
     overflow: auto;
     border: 1px solid @c-minor;
     background-color: #ffffff;
+    text-align: right;
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility 0s .2s;
   }
 
   &__list-item{
-    padding: 5px 15px;
+    padding: 5px 20px;
+    white-space: nowrap;
     cursor: pointer;
     transition: .1s;
 

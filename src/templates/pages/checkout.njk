@@ -9,12 +9,74 @@
             {% include "blocks/breadcrumbs.njk" %}
 
             <h1 class="content__title title-l1">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
-            <form class="content__checkout checkout">
+            <form class="content__checkout checkout js_checkout">
+                <div class="checkout__form-cols">
+                    <div class="checkout__form-col">
+                        <div class="checkout__form-col-name">ИНФОРМАЦИЯ КЛИЕНТА</div>
+                        <div class="checkout__form form">
+                            <div class="form__2-cols">
+                                <div class="form__col field">
+                                    <label class="field__container">
+                                        <input type="text" class="field__input" placeholder="Имя *" autocomplete="name">
+                                    </label>
+                                </div>
+                                <div class="form__col field">
+                                    <label class="field__container">
+                                        <input type="text" class="field__input" placeholder="E-mail *" inputmode="email" autocomplete="email">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__2-cols">
+                                <div class="form__col field">
+                                    <label class="field__container">
+                                        <input type="text" class="field__input" placeholder="Телефон *" inputmode="tel" autocomplete="tel">
+                                    </label>
+                                </div>
+                                <div class="form__col field">
+                                    <label class="field__container">
+                                        <input type="text" class="field__input" placeholder="Город *" autocomplete="address-level2">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__field field">
+                                <label class="field__container">
+                                    <textarea class="field__input field__input--textarea" placeholder="Комментарий к заказу"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__form-col">
+                        <div class="checkout__form-col-name">СПОСОБЫ ДОСТАВКИ</div>
+                        <div class="checkout__form form">
+                            <div class="form__radiogroup radiogroup">
+                                <label class="radiogroup__item radiobutton">
+                                    <span class="radiobutton__circle-wrap">
+                                        <input type="radio" value="Самовывоз" name="way-radio" class="radiobutton__input js_delivery_variant" checked>
+                                        <span class="radiobutton__circle"></span>
+                                    </span>
+                                    <span class="radiobutton__text">Самовывоз</span>
+                                </label>
+                                <label class="radiogroup__item radiobutton">
+                                    <span class="radiobutton__circle-wrap">
+                                        <input type="radio" value="Доставка" name="way-radio" class="radiobutton__input js_delivery_variant">
+                                        <span class="radiobutton__circle"></span>
+                                    </span>
+                                    <span class="radiobutton__text">Доставка</span>
+                                </label>
+                            </div>
+                            <div class="form__field field hidden js_delivery_addr_wrap">
+                                <label class="field__container">
+                                    <textarea class="field__input field__input--textarea js_delivery_addr" disabled placeholder="Адрес *" autocomplete="street-address"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <ul class="checkout__products-list">
-                    <li class="checkout__products-item purchased-product">
+                    <li class="checkout__products-item purchased-product js_purchased_product">
                         <div class="purchased-product__info">
                             <div class="purchased-product__img-wrap">
-                                <img src="" alt="" class="purchased-product__img">
+                                <img src="/dev_images/placeholder_middle.jpg" alt="" class="purchased-product__img">
                             </div>
                             <div class="purchased-product__block">
                                 <div class="purchased-product__text">
@@ -25,13 +87,13 @@
                             </div>
                         </div>
                         <div class="purchased-product__cancel-wrap">
-                            <button class="purchased-product__cancel" type="button"></button>
+                            <button class="purchased-product__cancel js_del_purchased_product" type="button"></button>
                         </div>
                     </li>
-                    <li class="checkout__products-item purchased-product">
+                    <li class="checkout__products-item purchased-product js_purchased_product">
                         <div class="purchased-product__info">
                             <div class="purchased-product__img-wrap">
-                                <img src="" alt="" class="purchased-product__img">
+                                <img src="/dev_images/placeholder_middle.jpg" alt="" class="purchased-product__img">
                             </div>
                             <div class="purchased-product__block">
                                 <div class="purchased-product__text">
@@ -42,7 +104,7 @@
                             </div>
                         </div>
                         <div class="purchased-product__cancel-wrap">
-                            <button class="purchased-product__cancel" type="button"></button>
+                            <button class="purchased-product__cancel js_del_purchased_product" type="button"></button>
                         </div>
                     </li>
                 </ul>
@@ -50,6 +112,9 @@
                     <button class="checkout__btn button button--t-green">отправить заявку</button>
                 </div>
             </form>
+            <div class="content__checkout checkout checkout--empty">
+                <div class="checkout__empty-text">Корзина пуста</div>
+            </div>
         </div>
     </main>
 

@@ -1,0 +1,19 @@
+.sitemap{
+  &__list{
+    .sitemap__list{
+      padding-left: 25px;
+    }
+  }
+
+  &__item{
+    & + &{
+      margin-top: 25px;
+    }
+
+    .sitemap__item{
+      margin-top: 15px;
+    }
+  }
+
+  &__link{}
+}

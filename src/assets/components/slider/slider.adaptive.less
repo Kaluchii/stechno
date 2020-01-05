@@ -1,3 +1,14 @@
+@media all and (max-width: 1360px){
+  .slider{
+    &__img{
+      height: 384px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+
 @media all and (max-width: @screen-width-b){
   .slider{
   }
@@ -6,11 +17,43 @@
 
 @media all and (max-width: @screen-width-m){
   .slider{
+    &__navigation-wrap{
+      padding: 0 @hor-indent-m;
+    }
+  }
+}
+
+
+@media all and (max-width: 860px){
+  .slider{
+    &__img{
+      height: 430px;
+    }
+  }
+}
+
+
+@media all and (max-width: 640px){
+  .slider{
+    &__img{
+      height: 320px;
+    }
+
+    &__navigation{
+      bottom: 20px;
+    }
   }
 }
 
 
 @media all and (max-width: @screen-width-s){
   .slider{
+    &__navigation-wrap{
+      padding: 0 @hor-indent-s;
+    }
+
+    &__navigation{
+      bottom: 15px;
+    }
   }
 }

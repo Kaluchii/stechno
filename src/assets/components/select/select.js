@@ -15,10 +15,12 @@
         for (let $selectOption of $selectOptions) {
             $selectOption.onclick = function () {
                 $selectInput.value = this.getAttribute('data-value');
+                $selectInput.dispatchEvent(new Event('change'));
                 for (let $selectOption of $selectOptions) {
                     $selectOption.classList.remove('is-active');
                 }
                 this.classList.add('is-active');
+                $select.dispatchEvent(new Event('change'));
                 $select.classList.remove('is-open');
                 $selectCurrValue.textContent = this.getAttribute('data-text');
             };

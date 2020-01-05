@@ -19,11 +19,12 @@
     display: block;
     height: @input-height;
     width: 100%;
-    padding: 6px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     line-height: 1.5;
     font-weight: @fw-light;
     border: 1px solid @c-gray;
+    border-radius: 3px;
     background-color: #ffffff;
     color: @c-main;
     outline: none;
@@ -39,15 +40,19 @@
     }
 
     &:hover, &:focus{
-      box-shadow: 0 0 0 1px @c-main;
+      box-shadow: 0 0 0 1px @c-green;
     }
 
     &:focus{
-      box-shadow: 0 0 0 2px @c-main;
+      box-shadow: 0 0 0 2px @c-green;
     }
 
     &[readonly]{
-      background-color: #e8e8e8;
+      background-color: #f3f3f3;
+    }
+
+    &[disabled]{
+      background-color: #f3f3f3;
     }
   }
 }

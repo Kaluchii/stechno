@@ -13,37 +13,20 @@
     }
   }
 
-  &__elements-row{
-    margin-top: 20px;
+  &__radiogroup{
+    font-size: 16px;
+  }
+
+  &__2-cols{
     display: flex;
     justify-content: space-between;
 
-    &:first-child{
-      margin-top: 0;
+    & + &{
+      margin-top: 25px;
     }
   }
 
-  &__elements-row-item{
-    font-size: 14px;
-  }
-
-  &__fields-title{
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: @fw-medium;
-
-    & + .form__field{
-      margin-top: 15px;
-    }
-
-    & + .form__elements-row{
-      margin-top: 10px;
-    }
-  }
-
-  &__radio{
-  }
-
-  &__submit-btn{
+  &__col{
+    width: calc(50% - 12px);
   }
 }

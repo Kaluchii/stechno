@@ -1,2 +1,122 @@
 .footer{
+  font-size: 16px;
+  background-color: @c-main;
+  color: #ffffff;
+
+  &__container{
+    margin: 0 auto;
+    max-width: @max-width-wth-indent;
+    padding: 60px @hor-indent;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-col{
+    width: 100%;
+    max-width: 360px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-right: 2px solid @c-minor;
+  }
+
+  &__logo-wrap{
+    font-size: 0;
+  }
+
+  &__logo{}
+
+  &__locations-list{
+    margin-top: 15px;
+  }
+
+  &__locations-item{
+    position: relative;
+    padding-left: 30px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: .25em;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background: url('/img/sprite.svg#pin') no-repeat center / contain;
+    }
+
+    & + &{
+      margin-top: 12px;
+    }
+  }
+
+  &__menu-wrap{
+    display: flex;
+  }
+
+  &__menu-col{
+    max-width: 175px;
+
+    & + &{
+      margin-left: 80px;
+    }
+  }
+
+  &__menu-list{
+    line-height: @lh-medium;
+  }
+
+  &__menu-item{
+    & + &{
+      margin-top: 10px;
+    }
+  }
+
+  &__menu-link{}
+
+  &__phone-link{
+    position: relative;
+    padding: 0 25px;
+    font-weight: @fw-norm;
+    white-space: nowrap;
+
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 16px;
+      height: 16px;
+    }
+
+    &::before{
+      left: 0;
+      background: url('/img/sprite.svg#phone_white') no-repeat center / contain;
+    }
+
+    &::after{
+      right: 0;
+      background: url('/img/sprite.svg#wa') no-repeat center / contain;
+    }
+  }
+
+  &__made-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+  }
+
+  &__made-with-love{}
+
+  &__made-with-love-text{}
+
+  &__made-link{
+    font-size: 0;
+  }
+
+  &__made-logo{
+    width: 103px;
+  }
+
+  &__copyright{
+    font-size: inherit;
+  }
 }

@@ -8,3 +8,30 @@
   .form{
   }
 }
+
+
+@media all and (max-width: 450px) {
+  .form{
+    &__field{
+      &:nth-child(n+2){
+        margin-top: 20px;
+      }
+    }
+
+    &__2-cols{
+      flex-direction: column;
+
+      & + &{
+        margin-top: 20px;
+      }
+    }
+
+    &__col{
+      width: 100%;
+
+      & + &{
+        margin-top: 20px;
+      }
+    }
+  }
+}

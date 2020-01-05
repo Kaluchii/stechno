@@ -1,0 +1,100 @@
+{% set title = "Поиск" %}
+{% set page = "searchpage" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    <main class="page__content content">
+        <div class="content__container">
+            {% include "blocks/breadcrumbs.njk" %}
+
+            <h1 class="content__title title-l1">КАРТА САЙТА</h1>
+            <div class="content__sitemap sitemap">
+                <ul class="sitemap__list">
+                    <li class="sitemap__item">
+                        <a href="#" class="sitemap__link link">Ссылка на страницу</a>
+                        <ul class="sitemap__list">
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                                <ul class="sitemap__list">
+                                    <li class="sitemap__item">
+                                        <a href="#" class="sitemap__link link">Ссылка на страницу уровень 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sitemap__item">
+                        <a href="#" class="sitemap__link link">Ссылка на страницу</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a href="#" class="sitemap__link link">Ссылка на страницу</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a href="#" class="sitemap__link link">Ссылка на страницу</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a href="#" class="sitemap__link link">Ссылка на страницу</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a href="#" class="sitemap__link link">Ссылка на страницу</a>
+                        <ul class="sitemap__list">
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                            </li>
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                            </li>
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                            </li>
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sitemap__item">
+                        <a href="#" class="sitemap__link link">Ссылка на страницу</a>
+                        <ul class="sitemap__list">
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                                <ul class="sitemap__list">
+                                    <li class="sitemap__item">
+                                        <a href="#" class="sitemap__link link">Ссылка на страницу уровень 3</a>
+                                    </li>
+                                    <li class="sitemap__item">
+                                        <a href="#" class="sitemap__link link">Ссылка на страницу уровень 3</a>
+                                    </li>
+                                    <li class="sitemap__item">
+                                        <a href="#" class="sitemap__link link">Ссылка на страницу уровень 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                                <ul class="sitemap__list">
+                                    <li class="sitemap__item">
+                                        <a href="#" class="sitemap__link link">Ссылка на страницу уровень 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sitemap__item">
+                                <a href="#" class="sitemap__link link">Ссылка на страницу уровень 2</a>
+                                <ul class="sitemap__list">
+                                    <li class="sitemap__item">
+                                        <a href="#" class="sitemap__link link">Ссылка на страницу уровень 3</a>
+                                    </li>
+                                    <li class="sitemap__item">
+                                        <a href="#" class="sitemap__link link">Ссылка на страницу уровень 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {% include "blocks/request.njk" %}
+    </main>
+
+{% endblock %}

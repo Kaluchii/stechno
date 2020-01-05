@@ -1,2 +1,245 @@
 .header{
+  font-size: 15px;
+
+  &__top{
+    padding: 0 @hor-indent;
+    background-color: #F7F7F7;
+  }
+
+  &__top-container{
+    margin: 0 auto;
+    max-width: @content-width;
+    display: flex;
+  }
+
+  &__menu-wrap{
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  &__menu{
+    display: flex;
+    font-size: 16px;
+  }
+
+  &__menu-item{
+    & + &{
+      margin-left: 25px;
+    }
+  }
+
+  &__menu-link{}
+
+  &__phone-wrap{}
+
+  &__phone{
+    position: relative;
+    padding: 0 20px;
+    font-weight: @fw-norm;
+    white-space: nowrap;
+
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 15px;
+      height: 15px;
+    }
+
+    &::before{
+      left: 0;
+      background: url('/img/sprite.svg#phone_red') no-repeat center / contain;
+    }
+
+    &::after{
+      right: 0;
+      background: url('/img/sprite.svg#wa') no-repeat center / contain;
+    }
+  }
+
+  &__right-block{
+    display: flex;
+  }
+
+  &__basket-link-wrap{}
+
+  &__basket-link{
+    position: relative;
+    padding-left: 25px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background: url('/img/sprite.svg#checkout') no-repeat center / contain;
+    }
+  }
+
+  &__city-wrap{
+    margin-left: 40px;
+  }
+
+  &__city{}
+
+  &__search-wrap{
+    position: relative;
+
+    &.is-open{
+      .header{
+        &__search-open-btn{
+          display: none;
+        }
+
+        &__search{
+          opacity: 1;
+          visibility: visible;
+          transition: opacity .2s, visibility 0s;
+        }
+      }
+    }
+  }
+
+  &__search-open-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__search-btn{
+    outline: none;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('/img/sprite.svg#magnifier') no-repeat center / 16px 16px,  @c-green;
+    cursor: pointer;
+    transition: .1s;
+
+    &:hover{
+      background: url('/img/sprite.svg#magnifier') no-repeat center / 16px 16px,  @c-green-light;
+    }
+  }
+
+  &__search{
+    position: absolute;
+    top: 0;
+    right: 56px;
+    z-index: 1;
+    height: 100%;
+    width: 320px;
+    padding: 15px;
+    background-color: #ffffff;
+    outline: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility 0s .2s;
+  }
+
+  &__bottom{
+    position: relative;
+    padding: 0 @hor-indent;
+    font-weight: @fw-norm;
+    text-transform: uppercase;
+  }
+
+  &__bottom-container{
+    margin: 0 auto;
+    max-width: @content-width;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid @c-gray;
+  }
+
+  &__logo-wrap{
+    font-size: 0;
+  }
+
+  &__logo{}
+
+  &__categories{
+    margin-left: 10px;
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  &__categories-list{
+    height: 100%;
+    display: flex;
+  }
+
+  &__categories-item{
+    height: 100%;
+    flex-grow: 1;
+
+    &:hover, &:focus-within{
+      .header{
+        &__subcategories-container{
+          z-index: 1;
+          opacity: 1;
+          visibility: visible;
+          transition: opacity .2s .3s, visibility 0s .3s;
+        }
+      }
+    }
+  }
+
+  &__category-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 15px;
+    padding-right: 7px;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 7px;
+      transform: translateY(5px);
+      border: 4.5px solid transparent;
+      border-top-color: currentColor;
+    }
+  }
+
+  &__subcategories-container{
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    border-top: 1px solid @c-gray;
+    background-color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s .4s, visibility 0s .6s;
+  }
+
+  &__subcategories{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: @content-width;
+    padding: 15px 0 30px 195px;
+    font-size: 14px;
+  }
+
+  &__subcategories-item{
+    margin-top: 15px;
+    margin-right: 45px;
+  }
+
+  &__subcategory-link{}
 }

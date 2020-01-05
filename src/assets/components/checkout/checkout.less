@@ -1,2 +1,41 @@
 .checkout{
+  & + &--empty{
+    display: none;
+  }
+
+  &__empty-text{}
+
+  &__form-cols{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-col{
+    width: 45%;
+  }
+
+  &__form-col-name{
+    padding: 9px 20px;
+    font-weight: @fw-norm;
+    background-color: @c-gray;
+  }
+
+  &__form{
+    margin-top: 25px;
+  }
+
+  &__products-list{
+    margin-top: 40px;
+    border-top: 2px solid @c-gray;
+  }
+
+  &__products-item{}
+
+  &__btn-wrap{
+    margin-top: 45px;
+  }
+
+  &__btn{
+    margin-left: auto;
+  }
 }
