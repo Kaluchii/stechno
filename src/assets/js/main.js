@@ -55,7 +55,7 @@
     }
 
 
-    $('.js_checkout_form').on('fail-send', function () {
+    $('.js_checkout_form').on('success-send', function () {
         $('.js_notification').fadeIn();
         $('.js_checkout').remove();
         setTimeout(function () {
@@ -63,7 +63,7 @@
         }, 5000);
     });
 
-    $('.js_request_form').on('fail-send', function () {
+    $('.js_request_form').on('success-send', function () {
         $('.js_notification').fadeIn();
         setTimeout(function () {
             $('.js_notification').fadeOut();
