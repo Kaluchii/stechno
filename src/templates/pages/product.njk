@@ -5,38 +5,38 @@
 {% block content %}
 
     <main class="page__content content">
-        <div class="content__container">
+        <div class="content__container" itemscope itemtype="http://schema.org/Product">
             {% include "blocks/breadcrumbs.njk" %}
 
-            <h1 class="content__title title-l1">PHILIPS 40PFT4100/60</h1>
+            <h1 class="content__title title-l1" itemprop="name">PHILIPS 40PFT4100/60</h1>
             <div class="content__product-card product-card">
                 <div class="product-card__container">
                     <div class="product-card__gallery">
                         <div class="product-card__slider-wrap">
                             <div class="product-card__slider js_product_slider">
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big1.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big1.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big2.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big2.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big3.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big3.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big4.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big4.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big5.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big5.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big6.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big6.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                                 <div class="product-card__slide">
-                                    <img src="/dev_images/placeholder_big7.jpg" alt="" class="product-card__slide-img">
+                                    <img src="/dev_images/placeholder_big7.jpg" alt="" class="product-card__slide-img" itemprop="image">
                                 </div>
                             </div>
                         </div>
@@ -74,12 +74,15 @@
                         </div>
                     </div>
                     <div class="product-card__info">
-                        <div class="product-card__text text-block">
+                        <div class="product-card__text text-block" itemprop="description">
                             <h2>Lorem ipsum dolor.</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt modi molestiae molestias obcaecati quaerat quidem sapiente ut vel. Accusamus adipisci aliquid amet at autem blanditiis culpa cum debitis delectus deserunt, eligendi, error fuga in incidunt ipsam iste minus molestiae necessitatibus non numquam placeat porro praesentium quae quaerat quidem quo quos ratione rem sit voluptas. Beatae blanditiis consequatur corporis culpa deserunt dignissimos, eaque eius esse id impedit iste iure libero magnam maxime, molestias nam neque nostrum nulla numquam odit perspiciatis placeat possimus quis quo reiciendis repellendus temporibus unde vero voluptate?</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores aspernatur distinctio eveniet hic iste magni nesciunt tempora voluptatibus?</p>
                         </div>
-                        <div class="product-card__price">85&nbsp;900 тенге</div>
+                        <div class="product-card__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="url" content=".">
+                            <span itemprop="price" content="85900">85&nbsp;900</span> <span itemprop="priceCurrency" content="KZT">тенге</span>
+                        </div>
                         <div class="product-card__btn-wrap">
                             <button class="product-card__btn button button--s-middle button--t-green js_to_checkout_btn in-order" type="button">
                                 <span class="button__text button__text--not-order">В КОРЗИНУ</span>

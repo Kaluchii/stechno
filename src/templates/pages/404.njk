@@ -1,0 +1,18 @@
+{% set title = "Поиск" %}
+{% set page = "searchpage" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    <main class="page__content content">
+        <div class="content__container">
+
+            <h1 class="content__title title-l1">Запрашиваемая страница не найдена!</h1>
+            <div class="content__not-found not-found">
+                <p class="not-found__text">Возможно ссылка по которой вы перешли устарела.</p>
+            </div>
+        </div>
+        {% include "blocks/request.njk" %}
+    </main>
+
+{% endblock %}
