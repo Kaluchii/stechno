@@ -1,24 +1,24 @@
 <div class="content__request request">
     <div class="request__container">
         <p class="request__title">Оставьте заявку и наш менеджер свяжется&nbsp;с&nbsp;вами</p>
-        <form action="" class="request__form request-form">
+        <form action="/" class="request__form request-form js_form js_request_form" method="post" novalidate>
             <div class="request-form__field field">
                 <label class="field__container">
-                    <input type="text" class="field__input" name="product-name" placeholder="Наименование товара*" autocomplete="off">
+                    <input type="text" class="field__input js_form_input" name="product-name" placeholder="Наименование товара*" required autocomplete="off">
                 </label>
             </div>
             <div class="request-form__field field">
                 <label class="field__container">
-                    <input type="text" class="field__input" name="user-name" placeholder="Имя*" autocomplete="name">
+                    <input type="text" class="field__input js_form_input" name="user-name" placeholder="Имя*" required autocomplete="name">
                 </label>
             </div>
             <div class="request-form__field field">
                 <label class="field__container">
-                    <input type="tel" class="field__input" name="user-phone" placeholder="Телефон*" autocomplete="tel" inputmode="tel">
+                    <input type="tel" class="field__input js_form_input" name="user-phone" placeholder="Телефон*" required autocomplete="tel" inputmode="tel">
                 </label>
             </div>
             <div class="request-form__field request-form__field--btn">
-                <button class="request-form__btn button button--t-red">оставить заявку</button>
+                <button class="request-form__btn button button--t-red js_send_form_btn">оставить заявку</button>
             </div>
         </form>
     </div>

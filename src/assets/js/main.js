@@ -54,4 +54,20 @@
         }
     }
 
+
+    $('.js_checkout_form').on('fail-send', function () {
+        $('.js_notification').fadeIn();
+        $('.js_checkout').remove();
+        setTimeout(function () {
+            $('.js_notification').fadeOut();
+        }, 5000);
+    });
+
+    $('.js_request_form').on('fail-send', function () {
+        $('.js_notification').fadeIn();
+        setTimeout(function () {
+            $('.js_notification').fadeOut();
+        }, 5000);
+    });
+
 });

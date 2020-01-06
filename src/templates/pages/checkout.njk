@@ -9,7 +9,7 @@
             {% include "blocks/breadcrumbs.njk" %}
 
             <h1 class="content__title title-l1">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
-            <form class="content__checkout checkout js_checkout">
+            <form class="content__checkout checkout js_checkout js_form js_checkout_form" method="" action="" novalidate>
                 <div class="checkout__form-cols">
                     <div class="checkout__form-col">
                         <div class="checkout__form-col-name">ИНФОРМАЦИЯ КЛИЕНТА</div>
@@ -17,30 +17,30 @@
                             <div class="form__2-cols">
                                 <div class="form__col field">
                                     <label class="field__container">
-                                        <input type="text" class="field__input" placeholder="Имя *" autocomplete="name">
+                                        <input type="text" class="field__input js_form_input" required placeholder="Имя *" autocomplete="name">
                                     </label>
                                 </div>
                                 <div class="form__col field">
                                     <label class="field__container">
-                                        <input type="text" class="field__input" placeholder="E-mail *" inputmode="email" autocomplete="email">
+                                        <input type="email" class="field__input js_form_input" required placeholder="E-mail *" inputmode="email" autocomplete="email">
                                     </label>
                                 </div>
                             </div>
                             <div class="form__2-cols">
                                 <div class="form__col field">
                                     <label class="field__container">
-                                        <input type="text" class="field__input" placeholder="Телефон *" inputmode="tel" autocomplete="tel">
+                                        <input type="text" class="field__input js_form_input" required placeholder="Телефон *" inputmode="tel" autocomplete="tel">
                                     </label>
                                 </div>
                                 <div class="form__col field">
                                     <label class="field__container">
-                                        <input type="text" class="field__input" placeholder="Город *" autocomplete="address-level2">
+                                        <input type="text" class="field__input js_form_input" required placeholder="Город *" autocomplete="address-level2">
                                     </label>
                                 </div>
                             </div>
                             <div class="form__field field">
                                 <label class="field__container">
-                                    <textarea class="field__input field__input--textarea" placeholder="Комментарий к заказу"></textarea>
+                                    <textarea class="field__input field__input--textarea js_form_input" placeholder="Комментарий к заказу"></textarea>
                                 </label>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                             </div>
                             <div class="form__field field hidden js_delivery_addr_wrap">
                                 <label class="field__container">
-                                    <textarea class="field__input field__input--textarea js_delivery_addr" disabled placeholder="Адрес *" autocomplete="street-address"></textarea>
+                                    <textarea class="field__input field__input--textarea js_delivery_addr js_form_input" required disabled placeholder="Адрес *" autocomplete="street-address"></textarea>
                                 </label>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                     </li>
                 </ul>
                 <div class="checkout__btn-wrap">
-                    <button class="checkout__btn button button--t-green">отправить заявку</button>
+                    <button class="checkout__btn button button--t-green js_send_form_btn">отправить заявку</button>
                 </div>
             </form>
             <div class="content__checkout checkout checkout--empty">
