@@ -1,0 +1,99 @@
+.mob-header{
+  &.menu-is-open{
+    .mob-header{
+      &__bg{
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .4s, visibility 0s, width 0s;
+      }
+
+      &__menu{
+        visibility: visible;
+        transform: translateX(0);
+        transition: transform .4s, visibility 0s;
+      }
+    }
+  }
+
+  &__bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 0;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility 0s .4s, width 0s .4s;
+  }
+
+  &__container{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: #ffffff;
+  }
+
+  &__hamburger{}
+
+  &__logo-wrap{
+    font-size: 0;
+  }
+
+  &__logo{
+    position: relative;
+    display: block;
+    width: 110px;
+  }
+
+  &__basket-wrap{}
+
+  &__basket{
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid @c-main;
+    border-radius: 50%;
+    font-size: 0;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 6px;
+      height: 20px;
+      width: 20px;
+      background: url('../img/sprite.svg#checkout') no-repeat center / contain;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 21px;
+      right: 5px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #ff0000;
+    }
+  }
+
+  &__menu{
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    max-width: 320px;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform .4s, visibility 0s .4s;
+  }
+}
